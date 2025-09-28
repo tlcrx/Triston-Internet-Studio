@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dinner Invitation</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("https://www.transparenttextures.com/patterns/fish-scales.png"); /* seafood-themed tiled pattern */
+      background-color: #f0f8ff;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-size: 3em;
+      color: #003366;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      font-family: "Playfair Display", serif;
+      color: #006699;
+    }
+
+    p {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 250px;
+      border-radius: 12px;
+      margin: 10px;
+      display: block;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 8px 0;
+      color: #004d4d;
+    }
+
+    form {
+      margin-top: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      margin-top: 15px;
+      background-color: #006699;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #004466;
+    }
+
+    .guests {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .guest {
+      width: 250px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Seafood Extravaganza Dinner Invitation</h1>
+  </header>
+
+  <div class="content">
+    <h2>Guests of Honor</h2>
+    <div class="guests">
+    
+      <div class="guest">
+        <img src="img/beyonce.jpg" alt="Beyoncé">
+        <p>
+          Beyoncé is my personal favorite, as I grew up with her music being played 
+          at family gatherings. Her powerful voice and artistry shaped so many 
+          memories for me, and having her at this dinner would feel like honoring 
+          a lifelong influence.
+        </p>
+      </div>
+
+      
+      <div class="guest">
+        <img src="img/ariana.jpg" alt="Ariana Grande">
+        <p>
+          Ariana Grande’s incredible vocal range and playful personality make her 
+          an inspiring guest. She represents a modern pop influence, and her energy 
+          would bring a lively spirit to the evening.
+        </p>
+      </div>
+
+   
+      <div class="guest">
+        <img src="img/christina.jpg" alt="Christina Aguilera">
+        <p>
+          Christina Aguilera is an icon whose bold artistry has always stood out. 
+          Her mix of strength and vulnerability in her music would make her an 
+          unforgettable presence at the table.
+        </p>
+      </div>
+    </div>
+
+    <h2>Menu</h2>
+    <ul>
+      <li><strong>Appetizers:</strong> Oysters Rockefeller, Lobster Bisque</li>
+      <li><strong>Main Course:</strong> Butter-Poached Lobster, King Crab Legs, Garlic Shrimp Pasta</li>
+      <li><strong>Dessert:</strong> Key Lime Pie, Coconut Panna Cotta</li>
+      <li><strong>Drinks:</strong> Sparkling Wine, Fresh Coconut Water</li>
+    </ul>
+
+    <h2>RSVP</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+
+      <label>Will you be bringing a guest?</label>
+      <input type="radio" id="yes" name="guest" value="yes"> Yes
+      <input type="radio" id="no" name="guest" value="no"> No
+
+      <label for="diet">Dietary Preferences:</label>
+      <textarea id="diet" name="diet" rows="4"></textarea>
+
+      <input type="submit" value="Submit RSVP">
+    </form>
+  </div>
+</body>
+</html>
