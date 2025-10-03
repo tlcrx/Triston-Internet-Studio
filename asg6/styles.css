@@ -1,57 +1,47 @@
-
-html {
-  background: url("images/background.png") repeat; /* Background pattern */
-  background-color: #2e2e2e; /* Fallback dark grey */
-}
-
+/* General Page Styling */
 body {
-  font-family: 'Open Sans', sans-serif; /* Body font */
-  color: #e0e0e0; /* Light grey text */
-  margin: 40px;
-  line-height: 1.6em; /* Base readability */
+  background-color: #d3d3d3; /* light grey */
+  font-family: 'Open Sans', sans-serif;
+  color: #000; /* default paragraph text */
+  margin: 20px;
 }
 
-
-h1, h2, h3 {
-  font-family: 'Roboto Slab', serif; /* Heading font */
-  margin-bottom: 10px;
+h1, h2 {
+  font-family: 'Roboto Slab', serif;
+  color: white; /* headings look clean against grey */
 }
 
-
-h1 {
-  font-size: 2.5em;
-  color: #FFD700; /* Gold */
-  border-bottom: 2px solid #FFD700;
-  padding-bottom: 10px;
+/* Hat Headings */
+.white-hat {
+  color: #f5f5f5; /* white */
+  text-shadow: 1px 1px 2px #000;
+}
+.red-hat {
+  color: #e63946; /* red */
+}
+.black-hat {
+  color: #000; /* black */
+}
+.yellow-hat {
+  color: #f1c40f; /* yellow */
+}
+.green-hat {
+  color: #27ae60; /* green */
+}
+.blue-hat {
+  color: #2980b9; /* blue */
 }
 
-
-h2 {
-  font-size: 1.8em;
-  color: #90EE90; /* Light green */
-  margin-top: 25px;
-}
-
-
-h3 {
-  font-size: 1.4em;
-  color: #87CEEB; /* Sky blue */
-  margin-top: 15px;
-}
-
-
-p {
-  font-size: 1em;
-  margin-bottom: 15px;
-  line-height: 1.8em; /* Leading */
-  color: #f5f5f5;
-}
-
-
+/* Hat image positioning */
 .hat-image {
+  width: 100px;
+  display: block;
+  margin-top: 10px;
+}
+
+.hat-icon {
+  width: 120px;
   float: right;
   margin: 10px;
-  max-width: 150px;
-  border: 2px solid #fff;
-  border-radius: 8px;
 }
+
