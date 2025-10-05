@@ -1,140 +1,46 @@
-
+/* General Page Styling */
 body {
-  background-color: #d3d3d3; 
-  color: #000;
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-  padding: 20px;
+  background-color: #d3d3d3; /* light grey */
+  font-family: 'Open Sans', sans-serif;
+  color: #000; /* default paragraph text */
+  margin: 20px;
 }
 
-header {
-  text-align: center;
-  color: black;
-  margin-bottom: 30px;
+h1, h2 {
+  font-family: 'Roboto Slab', serif;
+  color: white; /* headings look clean against grey */
 }
 
-section {
-  margin-bottom: 40px;
-  padding: 20px;
-  border-radius: 10px;
+/* Hat Headings */
+.white-hat {
+  color: #f5f5f5; /* white */
+  text-shadow: 1px 1px 2px #000;
+}
+.red-hat {
+  color: #e63946; /* red */
+}
+.black-hat {
+  color: #000; /* black */
+}
+.yellow-hat {
+  color: #f1c40f; /* yellow */
+}
+.green-hat {
+  color: #27ae60; /* green */
+}
+.blue-hat {
+  color: #2980b9; /* blue */
 }
 
-
-.white-hat h2 {
-  color: #f5f5f5;
-  background-color: #000;
-  padding: 5px 10px;
-  display: inline-block;
-  border-radius: 5px;
-}
-
-.red-hat h2 {
-  color: #fff;
-  background-color: #e53935;
-  padding: 5px 10px;
-  display: inline-block;
-  border-radius: 5px;
-}
-
-.black-hat h2 {
-  color: #fff;
-  background-color: #000;
-  padding: 5px 10px;
-  display: inline-block;
-  border-radius: 5px;
-}
-
-.yellow-hat h2 {
-  color: #000;
-  background-color: #fdd835;
-  padding: 5px 10px;
-  display: inline-block;
-  border-radius: 5px;
-}
-
-.green-hat h2 {
-  color: #fff;
-  background-color: #43a047;
-  padding: 5px 10px;
-  display: inline-block;
-  border-radius: 5px;
-}
-
-.blue-hat h2 {
-  color: #fff;
-  background-color: #1e88e5;
-  padding: 5px 10px;
-  display: inline-block;
-  border-radius: 5px;
-}
-
-.reflection h2 {
-  color: #000;
-  background-color: #bdbdbd;
-  padding: 5px 10px;
-  display: inline-block;
-  border-radius: 5px;
-}
-
-
-.white-hat p {
-  background-color: #fff;
-  color: #000;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.red-hat p {
-  background-color: #ffcdd2;
-  color: #000;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.black-hat p {
-  background-color: #000;
-  color: #fff;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.yellow-hat p {
-  background-color: #fff9c4;
-  color: #000;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.green-hat p {
-  background-color: #c8e6c9;
-  color: #000;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.blue-hat p {
-  background-color: #bbdefb;
-  color: #000;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.reflection p {
-  background-color: #e0e0e0;
-  color: #000;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-
+/* Hat image positioning */
 .hat-image {
-  width: 150px; 
-  float: right;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  filter: none; 
-  border-radius: 8px;
+  width: 100px;
+  display: block;
+  margin-top: 10px;
 }
 
-
-
+.hat-icon {
+  width: 120px;
+  float: right;
+  margin: 10px;
+}
