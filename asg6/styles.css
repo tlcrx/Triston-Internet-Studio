@@ -1,77 +1,69 @@
 
-/* ===== General Page Styling ===== */
+/* General Page Style */
 body {
-  background-color: #d9d9d9; /* light grey background */
-  font-family: 'Open Sans', sans-serif;
-  color: #000;
-  margin: 60px;
-  line-height: 1.7;
-  position: relative;
+  background-color: #d3d3d3; /* light grey background */
+  color: #000; /* black text */
+  font-family: "Georgia", serif;
+  margin: 40px;
+  line-height: 1.6;
 }
 
-/* ===== Headings ===== */
-h1, h3 {
-  font-family: 'Roboto Slab', serif;
-  margin-top: 25px;
-}
-
+/* Main Heading */
 h1 {
-  font-size: 2.2em;
-  color: #000;
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 2em;
+}
+
+/* Hat Image */
+.hat-image {
+  width: 90px; /* smaller size */
+  float: right; /* moves hat to the right */
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+/* Heading Colors for Each Hat */
+.white-hat h2 {
+  color: #ffffff; /* white text */
+  background-color: #222;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.red-hat h2 {
+  color: #e74c3c; /* red */
+}
+
+.black-hat h2 {
+  color: #000000; /* black */
+}
+
+.yellow-hat h2 {
+  color: #f1c40f; /* yellow */
+}
+
+.green-hat h2 {
+  color: #27ae60; /* green */
+}
+
+.blue-hat h2 {
+  color: #2980b9; /* blue */
+}
+
+.project-change h2 {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Section Spacing */
+section {
   margin-bottom: 30px;
 }
 
-h3 {
-  font-size: 1.4em;
-  font-weight: bold;
-}
-
-/* ===== Hat-Specific Colors ===== */
-.white-hat {
-  color: #e0e0e0;
-  text-shadow: 1px 1px 2px #000;
-}
-
-.red-hat {
-  color: #e74c3c;
-}
-
-.black-hat {
-  color: #111;
-}
-
-.yellow-hat {
-  color: #f1c40f;
-}
-
-.green-hat {
-  color: #27ae60;
-}
-
-.blue-hat {
-  color: #2980b9;
-}
-
-/* ===== Paragraphs ===== */
-p {
-  color: #000;
-  font-size: 1.05em;
-  max-width: 900px;
-}
-
-/* ===== Personal Section ===== */
-.personal {
-  font-weight: 600;
-  color: #000;
-  margin-top: -5px;
-}
-
-/* ===== Hat Image Styling ===== */
-.hat-image {
-  width: 90px;
-  position: absolute;
-  top: 25px;
-  right: 50px;
-  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.4));
-}
 
