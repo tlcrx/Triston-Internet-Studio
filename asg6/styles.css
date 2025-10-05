@@ -1,34 +1,32 @@
 
+/* ===== General Page Styling ===== */
 body {
-  background-color: #d9d9d9; /* light grey */
+  background-color: #d9d9d9; /* light grey background */
   font-family: 'Open Sans', sans-serif;
-  color: #fff;
-  margin: 40px;
-  line-height: 1.6;
+  color: #000;
+  margin: 60px;
+  line-height: 1.7;
+  position: relative;
 }
 
-h1, h2, h3 {
+/* ===== Headings ===== */
+h1, h3 {
   font-family: 'Roboto Slab', serif;
+  margin-top: 25px;
 }
 
 h1 {
-  font-size: 2.5em;
-  font-weight: 600;
-  color: #f2f2f2;
-}
-
-h2 {
-  font-size: 1.8em;
-  color: #ffffff;
-}
-
-p {
+  font-size: 2.2em;
   color: #000;
-  font-size: 1.05em;
-  max-width: 800px;
+  margin-bottom: 30px;
 }
 
+h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
 
+/* ===== Hat-Specific Colors ===== */
 .white-hat {
   color: #e0e0e0;
   text-shadow: 1px 1px 2px #000;
@@ -40,11 +38,10 @@ p {
 
 .black-hat {
   color: #111;
-  font-weight: bold;
 }
 
 .yellow-hat {
-  color: #f4d03f;
+  color: #f1c40f;
 }
 
 .green-hat {
@@ -55,19 +52,26 @@ p {
   color: #2980b9;
 }
 
-
-.personal {
+/* ===== Paragraphs ===== */
+p {
   color: #000;
+  font-size: 1.05em;
+  max-width: 900px;
+}
+
+/* ===== Personal Section ===== */
+.personal {
   font-weight: 600;
+  color: #000;
   margin-top: -5px;
 }
 
-
+/* ===== Hat Image Styling ===== */
 .hat-image {
-  display: block;
-  width: 100px;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: 50px;
-  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.4));
+  width: 90px;
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.4));
 }
+
