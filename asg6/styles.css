@@ -1,4 +1,4 @@
-/* ===== General Page Styling ===== */
+/
 body {
   background-color: #d9d9d9; /* light grey */
   font-family: 'Open Sans', sans-serif;
@@ -28,7 +28,7 @@ p {
   max-width: 800px;
 }
 
-/* ===== Hat Headings ===== */
+
 .white-hat {
   color: #e0e0e0;
   text-shadow: 1px 1px 2px #000;
@@ -55,14 +55,14 @@ p {
   color: #2980b9;
 }
 
-/* ===== Personal Section ===== */
+
 .personal {
   color: #000;
   font-weight: 600;
   margin-top: -5px;
 }
 
-/* ===== Hat Image Styling ===== */
+
 .hat-image {
   display: block;
   width: 100px;
