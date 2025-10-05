@@ -1,65 +1,73 @@
-/* Base Styling */
+/* ===== General Page Styling ===== */
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #fdfdfd;
-  color: #222;
+  background-color: #d9d9d9; /* light grey */
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  margin: 40px;
   line-height: 1.6;
-  margin: 0;
-  padding: 0 20px;
 }
 
-header {
-  text-align: center;
-  padding: 30px 0;
-  background-color: #111;
-  color: white;
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
 }
 
-h1, h2 {
-  font-family: 'Poppins', sans-serif;
+h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #f2f2f2;
 }
 
-/* Section Styling */
-section {
-  margin-bottom: 30px;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* Hat Colors */
-.white-hat {
+h2 {
+  font-size: 1.8em;
   color: #ffffff;
-  background-color: #9e9e9e;
+}
+
+p {
+  color: #000;
+  font-size: 1.05em;
+  max-width: 800px;
+}
+
+/* ===== Hat Headings ===== */
+.white-hat {
+  color: #e0e0e0;
+  text-shadow: 1px 1px 2px #000;
 }
 
 .red-hat {
-  color: #fff;
-  background-color: #e53935;
+  color: #e74c3c;
 }
 
 .black-hat {
-  color: #fff;
-  background-color: #212121;
+  color: #111;
+  font-weight: bold;
 }
 
 .yellow-hat {
-  color: #000;
-  background-color: #ffeb3b;
+  color: #f4d03f;
 }
 
 .green-hat {
-  color: #fff;
-  background-color: #4caf50;
+  color: #27ae60;
 }
 
 .blue-hat {
-  color: #fff;
-  background-color: #2196f3;
+  color: #2980b9;
 }
 
-.change {
-  background-color: #f5f5f5;
-  border-left: 6px solid #2196f3;
+/* ===== Personal Section ===== */
+.personal {
+  color: #000;
+  font-weight: 600;
+  margin-top: -5px;
 }
- 
+
+/* ===== Hat Image Styling ===== */
+.hat-image {
+  display: block;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 50px;
+  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.4));
+}
