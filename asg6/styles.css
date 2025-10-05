@@ -1,6 +1,6 @@
-/* ===== GENERAL STYLES ===== */
+
 body {
-  background-color: #d3d3d3; /* light grey background */
+  background-color: #d3d3d3; 
   color: #000;
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -19,7 +19,7 @@ section {
   border-radius: 10px;
 }
 
-/* ===== HEADING COLORS FOR EACH HAT ===== */
+
 .white-hat h2 {
   color: #f5f5f5;
   background-color: #000;
@@ -76,7 +76,7 @@ section {
   border-radius: 5px;
 }
 
-/* ===== PARAGRAPH BACKGROUNDS ===== */
+
 .white-hat p {
   background-color: #fff;
   color: #000;
@@ -126,14 +126,15 @@ section {
   border-radius: 8px;
 }
 
-/* ===== IMAGE STYLING ===== */
+
 .hat-image {
-  width: 150px; /* smaller size */
+  width: 150px; 
   float: right;
   margin-left: 20px;
   margin-bottom: 10px;
-  filter: none; /* keep it full color */
+  filter: none; 
   border-radius: 8px;
 }
+
 
 
