@@ -1,0 +1,102 @@
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/poppins-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat-semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+:root {
+  --celadon: #baf2d8;
+  --dark-text: #1c1c1c;
+  --accent: #468b6e;
+  --font-body: 'Poppins', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----------- Body Styling ----------- */
+body {
+  background-color: var(--celadon);
+  font-family: var(--font-body);
+  color: var(--dark-text);
+  line-height: 1.6;
+  padding: 2rem;
+  background-image: url('background.jpg'); /* Optional: Replace with your own image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ----------- Fluid Type Scale ----------- */
+/* Formula from Fluid Type Scale Generator */
+html {
+  font-size: clamp(16px, 1vw + 1rem, 20px);
+}
+
+/* ----------- Headings ----------- */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+/* ----------- Paragraphs ----------- */
+p {
+  margin: 1rem auto;
+  max-width: 800px;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* ----------- Lists ----------- */
+ul {
+  list-style-type: disc;
+  margin: 1rem auto;
+  max-width: 600px;
+  padding-left: 2rem;
+}
+
+/* ----------- Sections ----------- */
+section {
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ----------- Header ----------- */
+header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
