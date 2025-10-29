@@ -5,17 +5,63 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Places To Eat — Martinique</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Flexbox Layout */
+    .container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .grid {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      align-items: stretch;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .place {
+      flex: 1 1 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .place img {
+      max-width: 100%;
+      border-radius: 10px;
+      align-self: center;
+    }
+
+    footer .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
-    <div class="container flex-between align-center">
+    <div class="container">
       <a class="brand" href="index.html"><h1>Martinique — VantageAvenir Travel</h1></a>
-
-      <!-- Flexbox Menu -->
-      <nav class="nav flex">
+      <nav class="nav">
         <a href="index.html">Home</a>
         <a href="activities.html">Things To Do</a>
-        <a href="dining.html" class="active">Places To Eat</a>
+        <a href="dining.html">Places To Eat</a>
         <a href="statement.html">Design Statement</a>
         <a href="contact.html">Contact Us</a>
       </nav>
@@ -29,30 +75,25 @@
         <article class="place">
           <img src="images/La Mandoline.webp" alt="La Mandoline">
           <h3>La Mandoline</h3>
-          <p>A family-run restaurant serving traditional Creole seafood and seasonal produce. Noted for its rum-infused desserts and warm hospitality. Reservations recommended on weekends.</p>
+          <p>A family-run restaurant serving traditional Creole seafood and seasonal produce. Noted for its rum-infused desserts and warm hospitality.</p>
         </article>
 
         <article class="place">
           <img src="images/XO Bistro.webp" alt="XO Bistro">
           <h3>XO Bistro</h3>
-          <p>Modern bistro with ocean views that blends French technique with local ingredients—think grilled snapper with tropical fruit chutney and fine local rums.</p>
+          <p>Modern bistro with ocean views that blends French technique with local ingredients—think grilled snapper with tropical fruit chutney.</p>
         </article>
 
         <article class="place">
           <img src="images/Anba Fèy Tôl La.webp" alt="Anba Fèy Tôl La">
           <h3>Anba Fèy Tôl La</h3>
-          <p>Affordable delicious menu and a very quick and friendly service. The restaurant decor is unique and it’s right by the coastline.</p>
+          <p>Affordable, delicious menu with quick, friendly service. Unique decor and a beautiful coastline view.</p>
         </article>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container flex-between align-center">
-      <div>Email: info@vantageavenir.example</div>
-      <div>© 2025 VantageAvenir Travel</div>
-    </div>
-  </footer>
-</body>
-</html>
+    <div class="
+
 
