@@ -6,6 +6,86 @@
   <title>About — VantageAvenir Travel</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* ===== Flex Menu Styling ===== */
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .flex-between {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .align-center {
+      align-items: center;
+    }
+
+    .nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav a {
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      color: #0b3b2f;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      color: #2f8f6b;
+    }
+
+    /* ===== Hamburger Menu ===== */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background: #0b3b2f;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 768px) {
+      .nav {
+        position: absolute;
+        top: 70px;
+        right: 1rem;
+        background: white;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        display: none;
+      }
+
+      .nav.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -19,11 +99,19 @@
         </div>
       </a>
 
+      <!-- Hamburger Button -->
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Navigation -->
       <nav class="nav flex">
         <a href="index.html">Home</a>
         <a href="activities.html">Things To Do</a>
         <a href="dining.html">Places To Eat</a>
-        <a href="statement.html" class="active">Design Statement</a>
+        <a href="statement.html" class="active" aria-current="page">Design Statement</a>
         <a href="contact.html">Contact Us</a>
       </nav>
     </div>
@@ -46,43 +134,5 @@
           My goal was to balance elegant simplicity with narrative warmth—reflecting both modern web design
           principles and the authentic culture of Martinique.
         </p>
-      </div>
 
-      <div class="hero-image">
-        <img src="images/martinique street.jpg" alt="Colorful street in Martinique" />
-      </div>
-    </section>
-
-    <section class="content">
-      <h2>Design Approach</h2>
-      <div class="grid flex space-between wrap">
-        <div class="card">
-          <h3>Typography</h3>
-          <p>Combines <em>Montserrat</em> for structure and <em>Lora</em> for warmth, emphasizing contrast and readability.</p>
-        </div>
-        <div class="card">
-          <h3>Color Palette</h3>
-          <p>Uses dark greens and soft neutrals to evoke tropical depth and natural serenity.</p>
-        </div>
-        <div class="card">
-          <h3>Layout & Accessibility</h3>
-          <p>Built with responsive Flexbox containers to ensure intuitive navigation and clear visual hierarchy.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container flex-between align-center wrap">
-      <div>
-        <strong>VantageAvenir Travel</strong><br>
-        Email: info@vantageavenir.example<br>
-        Phone: +1 (555) 555-5555
-      </div>
-      <div class="copyright">© 2025 VantageAvenir Travel — Design Statement</div>
-    </div>
-  </footer>
-</body>
-</html>
 
