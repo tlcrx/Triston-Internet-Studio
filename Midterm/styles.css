@@ -97,7 +97,7 @@ body {
   color: var(--accent);
 }
 
-/* ===== Hero Section ===== */
+
 .hero {
   display: flex;
   gap: 1.5rem;
@@ -135,7 +135,7 @@ body {
   box-shadow: 0 8px 24px rgba(11, 59, 47, 0.12);
 }
 
-/* ===== Buttons ===== */
+
 .btn {
   display: inline-block;
   background: var(--deep);
@@ -163,7 +163,7 @@ body {
   color: var(--sand);
 }
 
-/* ===== Cards & Highlights ===== */
+
 .highlights {
   display: flex;
   gap: 1rem;
@@ -191,7 +191,7 @@ body {
   font-size: 0.95rem;
 }
 
-/* ===== Main Content ===== */
+
 section.content {
   margin: 2rem 0;
 }
@@ -202,14 +202,14 @@ section.content {
   margin-bottom: 1rem;
 }
 
-/* ===== Grid Layout ===== */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
 }
 
-/* ===== Places ===== */
+
 .place {
   background: #fff;
   padding: 1rem;
@@ -230,7 +230,7 @@ section.content {
   margin-bottom: 0.6rem;
 }
 
-/* ===== Contact Form ===== */
+
 form.contact-form {
   background: #fff;
   padding: 1.5rem;
@@ -276,7 +276,6 @@ input[type="submit"]:hover {
   background: #e85a52;
 }
 
-/* ===== Footer ===== */
 .site-footer {
   background: var(--celadon);
   border-top: 1px solid var(--muted);
