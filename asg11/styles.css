@@ -1,0 +1,127 @@
+/* ==============================================
+   styles.css — Movie Gallery (asg12)
+   Fonts: Playfair Display + Montserrat
+   Palette: Greys + Warm Accents
+   ============================================== */
+
+/* === Base Styles === */
+:root {
+  --bg: #f2f2f2;
+  --dark: #1f1f1f;
+  --light: #fff;
+  --accent: #d4af37; /* Gold accent */
+  --text: #333;
+  --radius: 10px;
+  --transition: all 0.3s ease-in-out;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background: linear-gradient(180deg, #e0e0e0 0%, #bfbfbf 100%);
+  color: var(--text);
+  line-height: 1.7;
+  transition: var(--transition);
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #ececec;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  color: var(--dark);
+  font-size: 2.5em;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+h1:hover {
+  color: var(--accent);
+}
+
+.intro {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #444;
+  font-size: 1em;
+}
+
+/* === Gallery Grid === */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* === Movie Cards === */
+.card {
+  background: var(--light);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  overflow: hidden;
+  text-align: center;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-bottom: 2px solid var(--accent);
+  transition: filter 0.3s ease;
+}
+
+.card:hover img {
+  filter: brightness(1.1);
+}
+
+.card h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3em;
+  color: var(--dark);
+  margin: 0.8rem 0 0.3rem;
+  transition: color 0.3s ease;
+}
+
+.card:hover h2 {
+  color: var(--accent);
+}
+
+.card p {
+  font-size: 0.9em;
+  padding: 0 1rem 1rem;
+  color: #555;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #d9d9d9;
+  font-size: 0.9em;
+  color: #333;
+}
+
+/* === Smooth Page Transitions === */
+* {
+  scroll-behavior: smooth;
+}
+
+body, .card, h1, h2, img {
+  transition: var(--transition);
+}
+
+
