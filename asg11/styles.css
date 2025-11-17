@@ -1,128 +1,73 @@
-/* ================================
-   GOOGLE FONTS
-   ================================= */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Lora:wght@400;600&display=swap');
-
-/* ================================
-   COLOR PALETTE
-   Black • Charcoal • Silver • Electric Blue
-   ================================= */
-:root {
-    --black: #000000;
-    --charcoal: #1a1a1a;
-    --dark-gray: #2a2a2a;
-    --silver: #d9d9d9;
-    --accent: #4da6ff; /* optional highlight color */
+/* ====== GLOBAL RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* ================================
-   FLUID TYPE SCALE from Generator
-   Smooth responsive text sizes
-   ================================= */
-html {
-    font-size: clamp(14px, 1.2vw, 18px);
-}
-
-/* ================================
-   BODY BASE STYLES
-   ================================= */
+/* ====== PAGE STYLE ====== */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: var(--silver);
-    background: linear-gradient(to bottom, var(--black), var(--charcoal), var(--dark-gray));
-    background-attachment: fixed;
-    background-size: cover;
-    line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #000000, #1a1a1a, #2a2a2a);
+  color: white;
+  padding: 20px;
+  line-height: 1.6;
 }
 
-/* ================================
-   HEADERS
-   ================================= */
+/* ====== HEADER ====== */
 h1 {
-    font-family: 'Lora', serif;
-    font-size: 2.4rem;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 1px;
-    margin-top: 40px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 2.2rem;
 }
 
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-}
-
-/* ================================
-   PARAGRAPHS
-   ================================= */
 p {
-    font-size: 1rem;
-    line-height: 1.7;
-    max-width: 700px;
-    margin: 0 auto 20px auto;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  font-size: 1.1rem;
 }
 
-/* ================================
-   FLEXBOX GALLERY CONTAINER
-   ================================= */
-.team-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 40px 20px;
+/* ====== FLEX CONTAINER FOR TEAM ====== */
+.container {
+  display: flex;                  /* FLEX ENABLED */
+  flex-direction: row;            /* row | row-reverse | column | column-reverse */
+  flex-wrap: wrap;                /* nowrap | wrap | wrap-reverse */
+  justify-content: center;        /* centers the images */
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
 }
 
-/* ================================
-   TEAM MEMBER CARDS
-   ================================= */
-.member {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 20px;
-    width: 260px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* ====== INDIVIDUAL TEAM MEMBER IMAGES ====== */
+.item {
+  flex-shrink: 3;                 /* items shrink if needed */
+  flex-grow: 1;                   /* allows even spacing */
+  flex-basis: 250px;              /* base width for each image */
+  max-width: 280px;
+  background: #111;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover animation */
-.member:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-/* ================================
-   IMAGES
-   ================================= */
-.member img {
-    width: 100%;
-    max-width: 230px;
-    border-radius: 10px;
-    transition: opacity 0.3s ease;
+/* ====== HOVER EFFECT ====== */
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,0,0,0.9);
 }
 
-/* Image hover fade */
-.member img:hover {
-    opacity: 0.85;
-}
-
-/* ================================
-   ACCENT LINES / DETAILS
-   ================================= */
-.member h2 {
-    color: var(--accent);
-}
-
-/* ================================
-   RESPONSIVE DESIGN
-   ================================= */
-@media (max-width: 600px) {
-    .member {
-        width: 90%;
-    }
+/* ====== CAPTIONS ====== */
+.caption {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 600;
 }
