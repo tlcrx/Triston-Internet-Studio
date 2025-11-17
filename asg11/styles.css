@@ -1,0 +1,128 @@
+/* ================================
+   GOOGLE FONTS
+   ================================= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Lora:wght@400;600&display=swap');
+
+/* ================================
+   COLOR PALETTE
+   Black • Charcoal • Silver • Electric Blue
+   ================================= */
+:root {
+    --black: #000000;
+    --charcoal: #1a1a1a;
+    --dark-gray: #2a2a2a;
+    --silver: #d9d9d9;
+    --accent: #4da6ff; /* optional highlight color */
+}
+
+/* ================================
+   FLUID TYPE SCALE from Generator
+   Smooth responsive text sizes
+   ================================= */
+html {
+    font-size: clamp(14px, 1.2vw, 18px);
+}
+
+/* ================================
+   BODY BASE STYLES
+   ================================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--silver);
+    background: linear-gradient(to bottom, var(--black), var(--charcoal), var(--dark-gray));
+    background-attachment: fixed;
+    background-size: cover;
+    line-height: 1.6;
+}
+
+/* ================================
+   HEADERS
+   ================================= */
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+/* ================================
+   PARAGRAPHS
+   ================================= */
+p {
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+/* ================================
+   FLEXBOX GALLERY CONTAINER
+   ================================= */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+/* ================================
+   TEAM MEMBER CARDS
+   ================================= */
+.member {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animation */
+.member:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* ================================
+   IMAGES
+   ================================= */
+.member img {
+    width: 100%;
+    max-width: 230px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+/* Image hover fade */
+.member img:hover {
+    opacity: 0.85;
+}
+
+/* ================================
+   ACCENT LINES / DETAILS
+   ================================= */
+.member h2 {
+    color: var(--accent);
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================= */
+@media (max-width: 600px) {
+    .member {
+        width: 90%;
+    }
+}
