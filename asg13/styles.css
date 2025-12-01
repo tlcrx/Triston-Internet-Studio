@@ -1,0 +1,212 @@
+/* ============================================
+   asg13/styles.css
+   Dream Job Research — UX Researcher / Data Analyst
+   Layout: Flexbox (intro) + CSS Grid (jobs)
+   Fonts: Poppins + Inter
+   Theme: grey / black text, smooth transitions
+   ============================================ */
+
+/* ---------- Google fonts loaded in HTML ---------- */
+
+/* ---------- Root variables & fluid type ---------- */
+:root{
+  --bg-1: #f5f5f6;      /* light page tint */
+  --panel: #ececec;     /* card background */
+  --muted: #9b9b9b;     /* secondary text */
+  --text: #000000;      /* main body text (black) */
+  --accent: #2f6f8f;    /* subtle accent (teal-blue) */
+  --max-width: 1100px;
+  --pad: 1.25rem;
+  --radius: 12px;
+  --transition: 0.28s ease;
+}
+
+/* Fluid type scale (clamp) */
+html{ font-size: clamp(15px, 1.1vw + 0.4rem, 18px); box-sizing: border-box; scroll-behavior: smooth;}
+*,*::before,*::after{box-sizing: inherit;}
+
+/* ---------- Base page styles ---------- */
+body{
+  margin:0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:var(--text);
+  background: linear-gradient(180deg,#e9e9ea 0%, #dcdcdc 100%);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.6;
+}
+
+/* container to constrain content */
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:var(--pad);
+}
+
+/* ---------- Header (Flexbox) ---------- */
+.site-header{
+  background:transparent;
+  padding: 22px 0;
+}
+.header-flex{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-between;
+  align-items:center;
+  gap:1rem;
+}
+.brand h1{
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight:700;
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  margin:0;
+  color:var(--text);
+}
+.subtitle{
+  margin:6px 0 0 0;
+  color:var(--muted);
+  font-size: clamp(0.95rem, 0.6vw + 0.8rem, 1rem);
+}
+
+/* mini nav */
+.mini-nav{
+  display:flex;
+  gap:0.75rem;
+}
+.mini-nav a{
+  text-decoration:none;
+  color:var(--text);
+  background:transparent;
+  padding:8px 10px;
+  border-radius:8px;
+  transition: background var(--transition), transform var(--transition);
+}
+.mini-nav a:hover{
+  background:var(--panel);
+  transform: translateY(-2px);
+}
+
+/* ---------- Intro section (flexbox centered) ---------- */
+.intro{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  gap:1rem;
+  padding:1.25rem 0 2rem 0;
+}
+
+/* ---------- Jobs section header ---------- */
+.jobs h2{
+  font-family: "Poppins", sans-serif;
+  font-weight:600;
+  font-size: clamp(1.15rem, 1.2vw + 0.8rem, 1.5rem);
+  margin-bottom:1rem;
+  color:var(--text);
+}
+
+/* ---------- Jobs Grid (CSS Grid) ---------- */
+.jobs-grid{
+  display:grid;
+  /* explicit 3-column layout at wide screens, falls back responsively */
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  column-gap: 1.25rem;
+  row-gap: 1.25rem;
+  align-items: start;
+}
+
+/* make grid responsive on smaller screens */
+@media (max-width: 980px){
+  .jobs-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px){
+  .jobs-grid{ grid-template-columns: 1fr; }
+}
+
+/* ---------- Individual job card ---------- */
+.job-card{
+  background:var(--panel);
+  border-radius: var(--radius);
+  padding:1.1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  display:flex;
+  flex-direction:column;
+  gap:0.9rem;
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+  min-height: 220px;
+}
+
+/* hover interaction */
+.job-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.12);
+  background: #f8f8f8;
+}
+
+/* company logo area */
+.job-card .logo{
+  display:flex;
+  align-items:center;
+  gap: 0.8rem;
+}
+.job-card .logo img{
+  display:block;
+  width: 160px;
+  height:auto;
+  object-fit: contain;
+  filter: none;
+}
+
+/* job content */
+.job-content h3{
+  margin:0;
+  font-family:"Poppins", sans-serif;
+  font-size:1.05rem;
+  color:var(--text);
+}
+.apply-link{
+  display:inline-block;
+  margin-top:6px;
+  font-size:0.95rem;
+  color:var(--accent);
+  text-decoration:none;
+  border-bottom: 2px solid transparent;
+  transition: border-color var(--transition), color var(--transition);
+}
+.apply-link:hover{
+  color: #154a5d;
+  border-color: var(--accent);
+}
+
+/* paragraphs inside job card */
+.job-card p{
+  margin:0;
+  color:#2b2b2b;
+  font-size: 0.98rem;
+  line-height:1.6;
+}
+
+/* ---------- Footer ---------- */
+.site-footer{
+  margin-top: 3rem;
+  padding: 1.25rem 0;
+  text-align:center;
+  font-size:0.95rem;
+  color:var(--muted);
+}
+
+/* ---------- Accessibility + focus states ---------- */
+.job-card:focus{
+  outline: 3px solid rgba(47,111,143,0.14);
+  outline-offset: 4px;
+}
+
+/* ---------- Comments:
+   - The layout uses Flexbox for the header/intro area for centering and
+     horizontal distribution of the mini navigation.
+   - The job listings use CSS Grid (jobs-grid) with an explicit
+     3-column layout for desktop, falling back to two and one columns.
+   - Variables at top set the grey theme and text color to black.
+   - Smooth transitions are applied to interactive elements for polish.
+   ---------- */
